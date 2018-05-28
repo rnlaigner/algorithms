@@ -11,7 +11,8 @@ equacao de recorrencia
 OPT(i,t) = 
 {
     max { OPT( i - 1, t ), Wi + OPT( i - 1, t - Wi ) }  se t >= Wi
-    0 caso contrario
+    0 se i = 0
+    OPT( i - 1, t ) caso contrario
 }
 
 */
